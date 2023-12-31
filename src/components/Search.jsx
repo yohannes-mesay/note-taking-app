@@ -1,10 +1,17 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
-const Search = (handleSearchText) => {
+const Search = ({ handleSearchText }) => {
   return (
     <div class="search">
-      <FontAwesomeIcon class="search-icon" icon={faSearch} size="1.8em" />
+      <FontAwesomeIcon className="search-icon"
+          sx={{
+            position: "absolute",
+            top: "calc(50% - 20px)",
+            left: "calc(50% - 20px)",
+          }}
+          icon={faSearch}
+          size="2x"/>
       <input
         onChange={(event) => {
           handleSearchText(event.target.value);
