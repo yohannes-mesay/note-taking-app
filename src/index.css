@@ -20,6 +20,7 @@
     display:flex;
     flex-direction: column;
     justify-content: space-around;
+    white-space: pre-wrap;
 }
 .note.new{
 background-color: rgb(108, 178, 178);
@@ -33,6 +34,10 @@ textarea{
 textarea:focus{
 outline:none;
 }
+.delete-icon{
+cursor:pointer;  
+
+}
 .save{
     background-color: rgb(206, 204, 204);
     border:none;
@@ -43,8 +48,25 @@ outline:none;
     background-color: aliceblue;
     cursor:pointer;
 }
+
 .note-footer{   
     display:flex;
     align-items: center;
     justify-content: space-between;
+}
+.search{
+    align-items:center;
+    border-radius: 20px;
+    display: flex;
+    padding: 5px;
+    margin: 1.5em;
+    background-color: rgb(221, 222, 223);
+}
+.search input{
+    background-color: rgb(221, 222, 223);
+    border:none;
+
+}
+.search input:focus{
+    outline:none;
 }
